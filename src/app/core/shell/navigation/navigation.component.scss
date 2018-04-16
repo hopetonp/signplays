@@ -1,0 +1,23 @@
+.sidenav-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list {
+  width: 280px;
+}
+
+mat-icon {
+  margin-right: 15px;
+}
+
+mat-expansion-panel-header {
+  padding: 0 24px 0 15px;
+  border: none;
+}
+
+mat-expansion-panel {
+  box-shadow: none !important;
+}
+

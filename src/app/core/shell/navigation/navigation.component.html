@@ -1,0 +1,39 @@
+<div style="height: 100%; width:100%; background: yellow">
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #snav mode="over"
+                 [opened]="sideNavOpened"
+                 (mouseleave)="closeSideNav()"
+                 (click)="sideNavClick($event)"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list class="nav-list"  >
+        <ng-container *ngFor="let item of navItems">
+          <a mat-list-item *ngIf="!item['items']" [routerLink]="'/'+item.link" routerLinkActive="active" translate>
+            <mat-icon>{{item.icon}}</mat-icon>
+            {{item.label}}
+          </a>
+          <mat-expansion-panel *ngIf="item['items']">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon>{{item.icon}}</mat-icon>
+                {{item.label}}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-nav-list>
+              <a mat-list-item *ngFor="let subItem of item['items']" [routerLink]="'/'+subItem.link" routerLinkActive="active" translate>
+                <mat-icon>{{subItem.icon}}</mat-icon>
+                {{subItem.label}}
+              </a>
+            </mat-nav-list>
+          </mat-expansion-panel>
+        </ng-container>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</div>
+
+
+

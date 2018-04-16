@@ -1,0 +1,18 @@
+<div class="fill-parent flex-container-v">
+  <app-module-presenter-header [entityName] = "entityName" [title] = "title" ></app-module-presenter-header>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav *ngIf="showSidebar" #snav mode="side" [opened]="sideNavOpened" >
+       <app-module-presenter-sidebar [entity]="sideBarEntity" [title]="sideBarTitle" [defaultContent]="defaultSidebar"></app-module-presenter-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-icon *ngIf="showSidebar" style="cursor: pointer" (click)="sideNavOpened = !sideNavOpened">{{sideBarVisibilityIconName}}</mat-icon>
+      <span style="width:24px" *ngIf="!showSidebar"></span>
+      <div class="sidenav-content">
+        <div *ngIf="defaultContent">
+
+        </div>
+        <ng-content></ng-content>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

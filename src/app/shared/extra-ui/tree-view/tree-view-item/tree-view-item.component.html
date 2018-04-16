@@ -1,0 +1,16 @@
+<mat-expansion-panel #pnlExpander *ngIf="isExpandable; else no_expand_content">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{headerText}}
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <ng-content></ng-content>
+  <ng-container *ngIf="isExpandable && pnlExpander.expanded">
+    <app-tree-view [itemsSource]="item['items']" ></app-tree-view>
+  </ng-container>
+</mat-expansion-panel>
+
+<ng-template #no_expand_content>
+  <div>{{headerText}}</div>
+  <ng-content></ng-content>
+</ng-template>

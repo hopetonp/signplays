@@ -1,0 +1,11 @@
+<app-module-presenter sideBarTitle="Presentation Groups">
+  <ejs-grid #grid [dataSource]="data" allowPaging='true' allowFiltering='true' [pageSettings]='pageSettings'  [editSettings]='editSettings' [filterSettings]="filterSettings" >
+    <e-columns>
+      <e-column field='ProductID' headerText='Presentation ID' width="180" isPrimaryKey="true" ></e-column>
+      <e-column field='ProductName' headerText='Presentation Name' [validationRules]="productNameRules" ></e-column>
+      <e-column field='Discontinued' headerText='Published' width="140" [displayAsCheckBox]="true" editType="booleanedit" ></e-column>
+      <e-column headerText='Manage Records' width='160' [commands]='commands'></e-column>
+    </e-columns>
+  </ejs-grid>
+</app-module-presenter>
+

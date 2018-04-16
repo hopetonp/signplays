@@ -1,0 +1,22 @@
+.sidebar {
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-content {
+  padding: 10px;
+  width: 100%;
+}
+
+.sidebar-header {
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+  background: lightsteelblue;
+}
+
+.add-button {
+  margin-left: auto;
+}

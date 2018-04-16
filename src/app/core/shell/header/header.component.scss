@@ -1,0 +1,46 @@
+.nav-link.dropdown-toggle {
+  cursor: pointer;
+}
+
+.icon {
+  padding: 0 5px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: white;
+  display: block;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+  margin-right: 25px;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger-3.is-active .line:nth-child(1),
+#hamburger-3.is-active .line:nth-child(3) {
+  width: 15px;
+}
+
+#hamburger-3.is-active .line:nth-child(1) {
+  transform: translateX(-6px) rotate(-45deg);
+}
+
+#hamburger-3.is-active .line:nth-child(3) {
+  transform: translateX(-6px) rotate(45deg);
+}
+
+.iconed-text {
+  margin-left: 7px;
+  font-size: 0.6em;
+}

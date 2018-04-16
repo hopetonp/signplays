@@ -1,0 +1,12 @@
+<div class="sidebar">
+  <div class="flex-container-h sidebar-header">
+    <span>{{title}}</span>
+    <button class="add-button" mat-mini-fab >
+      <mat-icon aria-label="New">add</mat-icon>
+    </button>
+  </div>
+  <div class="flex-container-v sidebar-content">
+    <ejs-treeview *ngIf="defaultContent" allowDragAndDrop=true [fields]='field'></ejs-treeview>
+    <ng-content></ng-content>
+  </div>
+</div>

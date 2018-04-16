@@ -1,0 +1,21 @@
+<!--<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h1>
+      <img class="logo" src="assets/ngx-rocket-logo.png" alt="Systellect"/>
+      <span translate>Hello world !</span>
+    </h1>
+    <app-loader [isLoading]="isLoading"></app-loader>
+    <q [hidden]="isLoading">{{quote}}</q>
+  </div>
+</div>-->
+<div class="flex-container-v fill-parent flex-center">
+  <div style="color:gray; font-size: 80px; margin-bottom: 130px">Quick Start</div>
+  <div class="flex-w flex-center child-space-10 action-buttons">
+    <div class="flex-container-v flex-center" *ngFor = "let item of quickItems" >
+      <div class="quick-button">
+        <img [src]="'assets/'+item.icon" >
+      </div>
+      {{item.caption}}
+    </div>
+  </div>
+</div>

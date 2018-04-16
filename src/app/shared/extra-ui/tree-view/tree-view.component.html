@@ -1,0 +1,10 @@
+<mat-nav-list>
+  <div>
+    <a mat-list-item *ngFor="let item of itemsSource">
+      <app-tree-view-item [isExpandable]= "item['items']" [headerText]="item[displayMemberPath]" [item]="item" >
+        <ng-template></ng-template>
+      </app-tree-view-item>
+    </a>
+  </div>
+</mat-nav-list>
+

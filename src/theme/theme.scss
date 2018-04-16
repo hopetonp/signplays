@@ -1,0 +1,79 @@
+/*
+ * Global application theme.
+ * Framework overrides and customization goes here.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4 !important;
+  letter-spacing: -.1px !important;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.fill-parent {
+  height: 100%;
+  width: 100%;
+}
+
+.flex-h,
+.flex-v,
+.flex-w,
+.flex-container-h,
+.flex-container-v,
+.flex-container-w {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.flex-v,
+.flex-container-v {
+  flex-direction: column;
+}
+
+.flex-w,
+.flex-container-w {
+  flex-wrap: wrap;
+}
+
+.flex-container-h,
+.flex-container-v,
+.flex-container-w {
+  padding: 0;
+}
+
+.flex-right{
+  margin-left: auto;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.child-space-10 > * {
+  margin: 10px;
+
+}
+
+app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+app-navigation {
+  flex: 1;
+}
+
+.mat-drawer {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
