@@ -1,10 +1,9 @@
-# ngX Starter Kit
+# SignPlays - Digital Signage Platform
 
-Web project starter kit including modern tools and workflow based on
-[angular-cli](https://github.com/angular/angular-cli), best practices from the community, a scalable base template and
-a good learning base.
+Digital signage platform using modern tools and workflow based on
+[angular-cli](https://github.com/angular/angular-cli), best practices from the community.
 
-Generated using [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket).
+Initially generated using [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket).
 
 ### Benefits
 
