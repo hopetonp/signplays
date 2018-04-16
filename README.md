@@ -119,6 +119,7 @@ Development, build and quality processes are based on [angular-cli](https://gith
 - [Bootstrap 4](https://v4-alpha.getbootstrap.com)
 - [Font Awesome](http://fontawesome.io)
 - [RxJS](http://reactivex.io/rxjs)
+- [ngrx](https://github.com/ngrx/platform) 
 - [ng-bootsrap](https://ng-bootstrap.github.io/)
 - [ngx-translate](https://github.com/ngx-translate/core)
 - [Lodash](https://lodash.com)
@@ -144,7 +145,7 @@ Development, build and quality processes are based on [angular-cli](https://gith
 
 The MIT License (MIT)
 
-Copyright (c) 2016-2017 Thales Services SAS
+Copyright (c) 2017-2018 Systellect, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
